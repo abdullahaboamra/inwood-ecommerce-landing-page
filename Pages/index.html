@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>INWOOD - Landing Page</title>
-  <link rel="stylesheet" href="../Style/index.css">
-  
-  <!-- Google Fonts -->
+  <title>INWOOD - eCommerce Landing Page</title>
+  <link rel="stylesheet" href="../Style/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head><body>
+
   <div class="hero-wrapper">
     <header class="main-header">
-      <!-- Logo -->
       <a href="#" class="logo">
         <img src="../assets/images/Logo.svg" alt="INWOOD Logo">
       </a>
@@ -30,10 +27,10 @@
       </nav>
 
       <div class="header-actions">
- 
+
         <img src="../assets/images/Icon9.png"
          alt="" class="menu-toggle" id="menuToggle" >
-        
+
         <a href="#" aria-label="Search"><img src="../assets/images/serach.svg" alt="Search"></a>
         <a href="#" aria-label="Cart"><img src="../assets/images/shop.svg" alt="Cart"></a>
         <a href="#" aria-label="Account"><img src="../assets/images/user.svg" alt="Account"></a>
@@ -50,21 +47,637 @@
 
   </div>
 
+  <main class="page-container">
+    <!-- Main Title Header -->
+    <header class="main-header">
+      <h1 class="main-title">Explore by Category</h1>
+    </header>
+
+    <div class="content-layout">
+      <!-- Sidebar / Navigation -->
+      <aside class="sidebar" aria-label="Category Navigation">
+
+        <!-- Search Box -->
+        <div class="search-box">
+
+          <img   class="search-icon" src="../assets/images/serach.svg" alt="">
+          <input type="text" class="search-input" placeholder="Search" aria-label="Search categories">
+
+          <!-- Mobile Menu Button -->
+          <button  aria-label="Toggle Category Menu" aria-expanded="false">
+
+            <img class="menu-toggle" id="categoryMenuToggle" width="22" height="22" viewBox="0 0 24 24" fill="none" src="../assets/images/Icon9.png" alt="">
+          </button>
+        </div>
+
+        <!-- Navigation Categories -->
+        <nav class="category-nav" id="categoryNav">
+          <ul class="category-list" role="tablist">
+            <li class="category-item" role="presentation">
+              <a href="#bedroom" class="category-link active" data-target="bedroom" role="tab" aria-selected="true" id="tab-bedroom">
+                Bedroom
+              </a>
+            </li>
+            <li class="category-item" role="presentation">
+              <a href="#dinning-room" class="category-link" data-target="dinning-room" role="tab" aria-selected="false" id="tab-dinning-room">
+                Dinning Room
+              </a>
+            </li>
+            <li class="category-item" role="presentation">
+              <a href="#meeting-room" class="category-link" data-target="meeting-room" role="tab" aria-selected="false" id="tab-meeting-room">
+                Meeting Room
+              </a>
+            </li>
+            <li class="category-item" role="presentation">
+              <a href="#workspace" class="category-link" data-target="workspace" role="tab" aria-selected="false" id="tab-workspace">
+                Workspace
+              </a>
+            </li>
+            <li class="category-item" role="presentation">
+              <a href="#living-room" class="category-link" data-target="living-room" role="tab" aria-selected="false" id="tab-living-room">
+                Living Room
+              </a>
+            </li>
+            <li class="category-item" role="presentation">
+              <a href="#kitchen" class="category-link" data-target="kitchen" role="tab" aria-selected="false" id="tab-kitchen">
+                Kitchen
+              </a>
+            </li>
+            <li class="category-item" role="presentation">
+              <a href="#living-space" class="category-link" data-target="living-space" role="tab" aria-selected="false" id="tab-living-space">
+                Living Space
+              </a>
+            </li>
+          </ul>
+
+          <div class="nav-controls" aria-hidden="true">
+            <div class="vertical-track">
+              <div class="active-indicator"></div>
+            </div>
+            <div class="scroll-arrows">
+              <button type="button" class="arrow-btn arrow-btn--up" aria-label="Scroll up">
+             <img src="../assets/images/Up arrow.svg" alt="">
+              </button>
+              <button type="button" class="arrow-btn arrow-btn--down" aria-label="Scroll down">
+             <img src="../assets/images/Down arrow.svg" alt="">
+
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <!-- All Categories Button -->
+        <a href="#all" class="btn btn--all-categories">
+          <span>All Categories</span>
+          <img   src="../assets/images/Arrow.png" alt="">
+        </a>
+      </aside>
+
+      <!-- Cards Grid Section -->
+      <section class="cards-section" aria-live="polite">
+        <div class="cards-grid">
+
+          <article class="feature-card active" data-category="bedroom" id="bedroom" role="tabpanel" aria-labelledby="tab-bedroom">
+            <h2 class="feature-card__title">Bedroom</h2>
+            <a href="#" class="feature-card__button">Explore</a>
+          </article>
+
+          <article class="feature-card" data-category="dinning-room" id="dinning-room" role="tabpanel" aria-labelledby="tab-dinning-room">
+            <h2 class="feature-card__title">Dinning Room</h2>
+            <a href="#" class="feature-card__button">Explore</a>
+          </article>
+
+          <article class="feature-card" data-category="meeting-room" id="meeting-room" role="tabpanel" aria-labelledby="tab-meeting-room">
+            <h2 class="feature-card__title">Meeting Room</h2>
+            <a href="#" class="feature-card__button">Explore</a>
+          </article>
+
+          <article class="feature-card" data-category="workspace" id="workspace" role="tabpanel" aria-labelledby="tab-workspace">
+            <h2 class="feature-card__title">Workspace</h2>
+            <a href="#" class="feature-card__button">Explore</a>
+          </article>
+
+          <article class="feature-card" data-category="living-room" id="living-room" role="tabpanel" aria-labelledby="tab-living-room">
+            <h2 class="feature-card__title">Living Room</h2>
+            <a href="#" class="feature-card__button">Explore</a>
+          </article>
+
+          <article class="feature-card" data-category="kitchen" id="kitchen" role="tabpanel" aria-labelledby="tab-kitchen">
+            <h2 class="feature-card__title">Kitchen Room</h2>
+            <a href="#" class="feature-card__button">Explore</a>
+          </article>
+
+        </div>
+      </section>
+    </div>
+  </main>
 
 
-  <script src="../js/index.js"></script>
+  <section class="popular-products">
+  <img src="../assets/images/Image-container.png" alt="Featured Chair Background" class="bg-chair-img">
+
+  <div class="container">
+    <h3 class="section-title">Popular Products</h3>
+
+    <div class="slider-wrapper">
+      <div class="products-track" id="productsTrack">
+
+        <article class="product-card bg-mint">
+          <div class="card-img-holder">
+            <img src="../assets/images/48550-2-chair-download-free-hq-image 1.png" alt="Armchair">
+          </div>
+          <div class="card-details">
+            <h4 class="product-name">Armchair</h4>
+            <p class="product-desc">Light single chair</p>
+            <span class="product-price">$145</span>
+          </div>
+        </article>
+
+        <article class="product-card bg-blue">
+          <div class="card-img-holder">
+            <img src="../assets/images/chair 2.png" alt="Premium Sofa">
+          </div>
+          <div class="card-details">
+            <h4 class="product-name">Premium Sofa</h4>
+            <p class="product-desc">Light single chair</p>
+            <span class="product-price">$145</span>
+          </div>
+        </article>
+
+        <article class="product-card bg-purple">
+          <div class="card-img-holder">
+            <img src="../assets/images/unnamed 1.png" alt="Minimal Sofa">
+          </div>
+          <div class="card-details">
+            <h4 class="product-name">Minimal Sofa</h4>
+            <p class="product-desc">Light single chair</p>
+            <span class="product-price">$145</span>
+          </div>
+        </article>
+
+        <article class="product-card bg-peach">
+          <div class="card-img-holder">
+            <img src="../assets/images/11-chair-png-image 1.png" alt="Dining Chair">
+          </div>
+          <div class="card-details">
+            <h4 class="product-name">Dining Chair</h4>
+            <p class="product-desc">Light single chair</p>
+            <span class="product-price">$145</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <div class="progress-bar-wrapper">
+        <img src="../assets/images/Line.png" alt="Progress Bar" class="progress-line-img">
+        <div class="progress-thumb" id="progressThumb"></div>
+      </div>
+
+
+      <div class="nav-buttons">
+        <button class="nav-btn prev" id="prevBtn" aria-label="Previous Products">
+          <img src="../assets/images/Up arrow.png"alt="Previous">
+        </button>
+        <button class="nav-btn next" id="nextBtn" aria-label="Next Products">
+          <img src="../assets/images/Down arrow.png" alt="Next">
+        </button>
+      </div>
+    </div>
+
+    <div class="explore-action">
+      <a href="#" class="btn-explore-all">
+        Explore all items
+        <img src="../assets/images/arrowRigitWhite.svg" alt="Arrow Right">
+      </a>
+    </div>
+
+  </div>
+</section>
+  <section class="package" aria-labelledby="package-title">
+    <div class="package__container">
+
+      <h2 id="package-title" class="package__title">Special Package</h2>
+
+      <div class="package__top">
+
+        <div class="package__media">
+            <div class="package__image"></div>
+          <button type="button" class="icon-btn icon-btn--expand" aria-label="View full image">
+            <img src="../assets/images/Zoom out.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="product-summary">
+          <p class="product-summary__title">Larkin Wood Full Set</p>
+
+
+
+          <div class="product-summary__rating">
+            <img src="../assets/images/Star.png" alt="Rated 5 out of 5 stars" />
+          </div>
+
+          <span class="product-summary__price">$729.99</span>
+          <button type="button" class="btn btn--primary product-summary__cta">
+            Add to cart
+            <img src="../assets/images/shop.svg" alt="" />
+          </button>
+        </div>
+
+
+
+        <div class="package__description">
+          <h3 class="package__description-title">Description</h3>
+
+          <p id="package-desc-text" class="package__description-text clamp-text">
+            Cast Aluminum Outdoor Chaise Lounge As an elegant and classic touch to your outdoor space, this cast Aluminum Chaise Lounge combines the appearance, function and quality all together, offering you with the best experience.
+          </p>
+
+          <button
+            type="button"
+            class="toggle-btn"
+            data-toggle="expand"
+            aria-controls="package-desc-text"
+            aria-expanded="false"
+          >
+            <span class="toggle-label">See More</span>
+            <img src="../assets/images/Down-arrow.svg" alt="" class="toggle-icon" />
+          </button>
+        </div>
+
+      </div>
+
+      <div class="related-products">
+
+        <ul class="related-products__list">
+
+          <li class="product-card product-card--highlight">
+            <div class="product-card__media">
+              <div class="product-card__placeholder" aria-hidden="true"></div>
+            </div>
+
+            <div class="product-card__body">
+              <div class="product-card__heading">
+                <h3 class="product-card__name">Living Room Family Set</h3>
+                <span class="product-card__price">$229.99</span>
+              </div>
+
+              <div class="product-card__rating">
+                <img src="../assets/images/Star.png" alt="Rated 5 out of 5 stars" />
+              </div>
+
+              <a href="#" class="product-card__link">See Details</a>
+            </div>
+
+            <button type="button" class="icon-btn icon-btn--zoom" aria-label="Quick view Living Room Family Set">
+              <img src="../assets/images/Zoom.png" alt="" />
+            </button>
+          </li>
+
+          <li class="product-card">
+            <div class="product-card__media">
+              <div class="product-card__placeholder" aria-hidden="true"></div>
+            </div>
+
+            <div class="product-card__body">
+              <div class="product-card__heading">
+                <h3 class="product-card__name">Living Room Special Set</h3>
+                <span class="product-card__price">$329.99</span>
+              </div>
+
+              <div class="product-card__rating">
+                <img src="../assets/images/Star.png" alt="Rated 5 out of 5 stars" />
+              </div>
+
+              <p id="card-2-desc" class="product-card__excerpt clamp-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+
+              <button
+                type="button"
+                class="toggle-btn"
+                data-toggle="expand"
+                aria-controls="card-2-desc"
+                aria-expanded="false"
+              >
+                <span class="toggle-label">See More</span>
+                <img src="../assets/images/Down-arrow.svg" alt="" class="toggle-icon" />
+              </button>
+            </div>
+          </li>
+
+          <li class="product-card">
+            <div class="product-card__media">
+              <div class="product-card__placeholder" aria-hidden="true"></div>
+            </div>
+
+            <div class="product-card__body">
+              <div class="product-card__heading">
+                <h3 class="product-card__name">Living Room Special Set</h3>
+                <span class="product-card__price">$587.99</span>
+              </div>
+
+              <div class="product-card__rating">
+                <img src="../assets/images/Star.png" alt="Rated 5 out of 5 stars" />
+              </div>
+
+              <p id="card-3-desc" class="product-card__excerpt clamp-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+
+              <button
+                type="button"
+                class="toggle-btn"
+                data-toggle="expand"
+                aria-controls="card-3-desc"
+                aria-expanded="false"
+              >
+                <span class="toggle-label">See More</span>
+                <img src="../assets/images/Down-arrow.svg" alt="" class="toggle-icon" />
+              </button>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="related-products__scrollbar">
+          <span class="related-products__track" aria-hidden="true"></span>
+          <button type="button" class="scroll-btn scroll-btn--up" aria-label="Scroll up">
+            <img src="../assets/images/Up arrow.svg" alt="" />
+          </button>
+          <button type="button" class="scroll-btn scroll-btn--down" aria-label="Scroll down">
+            <img src="../assets/images/Down arrow.svg" alt="" />
+          </button>
+        </div>
+
+      </div>
+
+      <div class="package__progress" role="progressbar" aria-label="Section progress" aria-valuenow="1" aria-valuemin="1" aria-valuemax="4">
+        <span class="package__progress-fill"></span>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="creation-section">
+    <div class="container">
+
+      <div class="cards-track" id="cardsTrack">
+
+        <article class="card title-card bg-teal">
+          <div class="card-content">
+            <h5 class="card-title">Our <br> Own Creation</h5>
+            <p class="card-text">Designed in our studio</p>
+
+            <div class="controls-wrapper">
+              <span class="more-text">More</span>
+
+              <img src="../assets/images/Line.png" alt="Slider Divider" class="slider-divider-img">
+
+
+              <div class="nav-arrows">
+                <button class="arrow-btn" id="creationPrevBtn" aria-label="Previous Category">
+                  <img src="../assets/images/Up arrow.png" alt="Previous">
+                </button>
+                <button class="arrow-btn" id="creationNextBtn" aria-label="Next Category">
+                  <img src="../assets/images/Down arrow.png" alt="Next">
+                </button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+
+
+        <article class="card image-card bg-grey hover-effect">
+          <button class="btn-action">Explore All Rooms</button>
+        </article>
+
+
+        <article class="card image-card bg-grey hover-effect"></article>
+
+
+        <article class="card image-card bg-grey hover-effect"></article>
+
+
+        <article class="card image-card bg-grey hover-effect"></article>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="benefits-section">
+    <div class="container">
+
+
+      <h5 class="section-title">Benefits for your expediency</h5>
+
+      <div class="benefits-grid">
+
+
+        <article class="benefit-card">
+          <div class="card-icon-holder bg-mint">
+            <img src="../assets/images/Icon.png" alt="Flexible Payment Icon" class="card-icon">
+          </div>
+          <div class="card-details">
+            <h6 class="card-title">Payment Method</h6>
+            <p class="card-text">We offer flexible payment options, to make easier.</p>
+          </div>
+        </article>
+
+
+        <article class="benefit-card active">
+          <div class="card-icon-holder bg-pink">
+            <img src="../assets/images/Icon (1).png" alt="Return Policy Icon" class="card-icon">
+          </div>
+          <div class="card-details">
+            <h6 class="card-title">Return policy</h6>
+            <p class="card-text">You can return a product within 30 days.</p>
+          </div>
+        </article>
+
+
+        <article class="benefit-card">
+          <div class="card-icon-holder bg-blue">
+            <img src="../assets/images/Frame.png" alt="Customer Support Icon" class="card-icon">
+          </div>
+          <div class="card-details">
+            <h6 class="card-title">Customer Support</h6>
+            <p class="card-text">Our customer support is 24/7.</p>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="testimonials" aria-labelledby="testimonials-title">
+    <div class="testimonials__container">
+
+      <nav class="testimonials__header">
+        <h2 id="testimonials-title" class="testimonials__title">Testimonials</h2>
+        <p class="testimonials__subtitle">Over 15,000 happy customers.</p>
+      </nav>
+
+      <div class="testimonial-card">
+
+        <div class="testimonial-card__media">
+          <img src="../assets/images/Quote.png" alt="" class="testimonial-card__quote-icon" />
+
+          <div class="testimonial-card__image" aria-hidden="true"></div>
+        </div>
+
+        <blockquote class="testimonial-card__quote">
+          <p>“My experience with Mark is a complete <br> sucess, from customer service, wide range of<br> products, clean store, purchasing experience, the<br> newsletter.Thank you.”</p>
+          <div class="testimonial-card__author">
+            <cite class="testimonial-card__name">Leona Paul</cite>
+            <span class="testimonial-card__role">CEO of Floatcom</span>
+          </div>
+        </blockquote>
+
+        <div class="testimonial-card__nav">
+          <button type="button" class="nav-btn nav-btn--prev" aria-label="Previous testimonial">
+            <img src="../assets/images/Up arrow.png" alt="" class="icon-arrow" />
+          </button>
+          <button type="button" class="nav-btn nav-btn--next" aria-label="Next testimonial">
+            <img src="../assets/images/Down arrow.png" alt="" class="icon-arrow" />
+          </button>
+        </div>
+
+      </div>
+
+      <div class="testimonials__footer">
+        <div class="testimonials__progress" role="progressbar" aria-label="Testimonial progress" aria-valuenow="1" aria-valuemin="1" aria-valuemax="5">
+          <span class="testimonials__progress-fill"></span>
+        </div>
+
+        <a href="#" class="testimonials__link">
+          See all review
+
+          <img  class="icon-arrow" src="../assets/images/Arrow.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="newsletter" aria-labelledby="newsletter-title">
+
+    <div class="newsletter__media" aria-hidden="true"></div>
+
+    <div class="newsletter__content">
+
+      <h5 id="newsletter-title" class="newsletter__title">
+        Join Our<br />
+        <span class="newsletter__title-accent">Newsletter</span>
+      </h5>
+
+      <p class="newsletter__text">
+        Receive exclusive deals, discounts and many offers.
+      </p>
+
+      <form class="newsletter__form" novalidate>
+        <div class="newsletter__field">
+          <label for="newsletter-email" class="visually-hidden">Email address</label>
+          <input
+            type="email"
+            id="newsletter-email"
+            name="email"
+            class="newsletter__input"
+            placeholder="Enter your email"
+            autocomplete="email"
+            required
+          />
+        </div>
+
+        <button type="submit" class="newsletter__button">Subscribe</button>
+      </form>
+
+    </div>
+
+  </section>
+
+  <footer class="main-footer">
+    <div class="container">
+
+      <div class="footer-layout">
+
+
+        <article class="footer-section contact-info">
+          <a href="#" class="footer-logo">
+            <img src="../assets/images/Logo.svg" alt="INWOOD Logo">
+          </a>
+
+          <!-- Social Icons (4 <a> tags) -->
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><img src="../assets/images/Feacbook.png" alt="Facebook"></a>
+            <a href="#" aria-label="Instagram"><img src="../assets/images/Icon color.png" alt="Instagram"></a>
+            <a href="#" aria-label="LinkedIn"><img src="../assets/images/LinkedIn.png" alt="LinkedIn"></a>
+            <a href="#" aria-label="Dribbble"><img src="../assets/images/Dribbble.png" alt="Dribbble"></a>
+            <a href="#" aria-label="Twitter"><img src="../assets/images/Twitter.png" alt="Twitter"></a>
+          </div>
+
+
+          <div class="address-details">
+            <h4 class="address-title">Address</h4>
+            <span class="contact-line">+123 654 987</span>
+            <span class="contact-line">877 The Bronx, NY</span>
+            <span class="contact-line">14568, USA</span>
+          </div>
+        </article>
+
+    
+        <nav class="footer-section footer-nav">
+          <h3 class="nav-title">My Account</h3>
+          <ul>
+            <li><a href="#">Sign in</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Order status</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-section footer-nav">
+          <h3 class="nav-title">Help</h3>
+          <ul>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Sizing</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-section footer-nav">
+          <h3 class="nav-title">Shop</h3>
+          <ul>
+            <li><a href="#">All Products</a></li>
+            <li><a href="#">Bedroom</a></li>
+            <li><a href="#">Dinning Room</a></li>
+          </ul>
+        </nav>
+
+        <nav class="footer-section footer-nav">
+          <h3 class="nav-title">Legal Stuff</h3>
+          <ul>
+            <li><a href="#">Shipping & Delivery</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+          </ul>
+        </nav>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">Copyright ©2026 Omar sebah. All Rights Reserved</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-

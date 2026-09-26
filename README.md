@@ -1,68 +1,98 @@
-# INWOOD Ecommerce Landing Page
+# INWOOD E-Commerce Landing Page
 
-A professional landing page for a furniture and home decor brand called INWOOD. The project was built as a main storefront interface to showcase products with a modern visual style, cohesive color palette, and mobile-friendly interaction.
+A modern and responsive furniture e-commerce landing page designed for an online home and interior brand. This project showcases a premium retail experience with a hero banner, category navigation, featured product slider, and promotional sections built using clean HTML, CSS, and JavaScript.
 
-## Project Description
+## Project Overview
 
-This project is an initial version of an ecommerce landing page focused on selling furniture and home products. The page is designed to present the brand identity in an attractive and modern way, with emphasis on featured offers and encouraging visitors to take action.
+INWOOD is a fictional furniture brand landing page that highlights curated home interior collections, category-based browsing, and popular product promotions. The layout is designed to feel premium, minimal, and conversion-focused for an online shopping experience.
 
-## Current Status
+## Features
 
-The following features have been implemented so far:
+- Responsive landing page layout
+- Elegant hero section with strong branding
+- Category explorer with interactive tabs and selection states
+- Product slider with previous/next navigation
+- Modern furniture-themed design and typography
+- Fully static front-end implementation
+- Lightweight and easy to customize
 
-- Main navigation header
-- Brand logo section
-- Search, cart, and user icons
-- Hero section with headline, description, and CTA button
-- Modern responsive design for different screen sizes
-- Mobile menu toggle
-- Consistent color palette and typography for branding
-
-## Technologies Used
+## Tech Stack
 
 - HTML5
 - CSS3
-- JavaScript
+- Vanilla JavaScript
 - Google Fonts
-- SVG and PNG image assets
+- SVG and image assets
 
 ## Project Structure
 
 ```text
 inwood-ecommerce-landing-page/
+├── assets/
+│   └── images/
+├── js/
+│   └── script.js
 ├── Pages/
 │   └── index.html
 ├── Style/
-│   └── index.css
-├── js/
-│   └── index.js
-├── assets/
-│   └── images/
+│   └── style.css
 ├── README.md
 └── .gitignore
 ```
 
-## Run Locally
+## Getting Started
 
-1. Open the project folder.
-2. Open the file `Pages/index.html` in the browser.
-3. Alternatively, use the Live Server extension in VS Code for a better preview experience.
+1. Clone the repository:
+
+```bash
+git clone https://github.com/your-username/inwood-ecommerce-landing-page.git
+```
+
+2. Open the project folder.
+
+3. Launch the landing page in your browser:
+   - Open `Pages/index.html` directly in a browser, or
+   - Run a local server from the project root:
+
+```bash
+python -m http.server 8000
+```
+
+Then visit:
+
+```text
+http://localhost:8000/Pages/index.html
+```
+
+## Usage
+
+This project is intended as a front-end mockup for a modern furniture brand website. It can be used for:
+
+- UI mockups
+- portfolio projects
+- e-commerce homepage concepts
+- frontend practice and learning
+
+## Customization
+
+You can easily customize the project by editing:
+
+- `Pages/index.html` for page content and structure
+- `Style/style.css` for colors, spacing, layout, and responsive behavior
+- `js/script.js` for interactivity and UI behaviors
 
 ## Design Notes
 
-- The page is designed as a clean and engaging storefront interface.
-- The layout focuses on usability across desktop and mobile screens.
-- The colors and styling align with the INWOOD brand identity.
+The visual style uses a soft neutral palette, modern serif headings, and spacious layout design to reflect a premium homeware brand aesthetic. The project is intentionally static and efficient, making it easy to adapt for future product expansions.
 
-## Future Improvements
+## License
 
-- Add a featured products section
-- Display product categories
-- Add a deals or today’s offers section
-- Include customer reviews
-- Add a footer section
-- Connect the landing page to a complete ecommerce system later on
+This project is for educational and portfolio use. Please check with the project owner before using it for commercial purposes.
 
-## Note
+## Author
 
-This project is currently in its initial frontend stage and is still under development to become a full ecommerce website.
+Created as a front-end landing page concept for the INWOOD brand.
+
+## Contributing
+
+Pull requests and suggestions are welcome. If you want to improve the design, add more sections, or connect the interface to a backend, feel free to contribute.
